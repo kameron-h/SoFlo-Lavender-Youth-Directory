@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SoFlo Lavender Youth Directory</title>
+  <link rel="icon" href="img/ProgressPride_favicon.ico">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+  <div class="navbar"> 
+    <ul>
+      <li><a href="https://kharrisonadvocacyproject.kameron-h.repl.co/">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><button id="theme-button">Toggle Light Mode</button></li>
+      <li><button id="motion-button">Reduce Motion</button></li>
+    </ul>
+  </div>
+
+  <!--- Headings --->
+
+  <div class="header-container">
+    <div class="header-item">
+      <img src="img/ProgressPride_Heart.png" />
+    </div>
+    <div class="header-item">
+      <h1>My Activism Project: South FL Lavender Youth Directory</h1>
+      <h3>A website dedicated to highlighting resources in South FL for LGBTQ+ youth and young adults.
+      </h3>
+
+      <!--- Dropdown --->
+
+      <div class="header-button">
+        <button type="button">Advocacy</button>
+        <div class="dropdown-content">
+          <li><a href="https://www.save.lgbt/actions">SAVE LGBT</a></li>
+          <br>
+          <li><a href="https://www.eqfl.org/">Equality FL</a></li>
+          <br>
+          <li><a href="https://www.prismfl.org/about">PRISM FL</a></li>
+        </div>
+      </div>
+      <div class="header-button">
+        <button type="button">Education</button>
+        <div class="dropdown-content">
+          <li><a href="https://safeschoolssouthflorida.org/">Safe Schools South FL</a></li>
+          <br>
+          <li><a href="https://yesinstitute.org/what-we-offer/">YES Institute</a></li>
+          <br>
+          <li><a href="https://pflag.org/find-resources/">PFLAG</a></li>
+        </div>
+      </div>
+      <div class="header-button">
+        <button type="button">Support</button>
+        <div class="dropdown-content">
+          <li><a href="https://www.sunserve.org/programs/youth-services/youth-resources">SunServe Youth</a></li>
+          <br>
+          <li><a href="https://pridelines.org/youth-programs">Pridelines Youth</a></li>
+          <br>
+          <li><a href="https://www.thetrevorproject.org/">The Trevor Project</a></li>
+        </div>
+      </div>
+      <div class="header-button">
+        <button type="button">Health</button>
+        <div class="dropdown-content">
+          <li><a href="https://lgbtqhealthcaredirectory.org/">LGBTQ+ Health Directory</a></li>
+          <br>
+          <li><a href="https://www.cancommunityhealth.org/can-services-education/">CAN Community Health</a></li>
+          <br>
+          <li><a href="https://www.eqfl.org/transactionfl">TransAction Resource Guide</a></li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- About --->
+
+  <div class="content-container">
+    <h2 id="about">About My Topic</h2>
+    <p>Florida has experienced a massive influx of anti-LGBTQ+ legislation in recent years, especially regarding the
+      exposure of LGBTQ+ topics to
+      youth. Examples of Florida's anti-LGBTQ+ legislation include the "Don't Say Gay" bill, transgender youth sports
+      bans,
+      "Drag Queen Storytime" bans, and multiple bills that have severely restricted access to gender-affirming care.</p>
+    <p>Young people in the LGBTQ+ community report instances of discrimination and
+      violence at significantly higher rates than their straight and cisgender peers. Due to Florida's censorship laws
+      that keep LGBTQ+ topics away from children, LGBTQ+ youth are barred from resources and community support that can
+      save their lives. That is why this directory was created; so that LGBTQ+ youth (and allies) can find all of South
+      FL's LGBTQ+ resources in one place.
+    </p>
+
+    <!--- Data --->
+
+    <h3>Data about my topic</h3>
+
+    <h4>Charts:</h4>
+
+      <a href="https://www.thetrevorproject.org/survey-2022/#discrimination"><img class="active revealable" src="img/Discrimination_Sexuality.png"
+          alt="Discrimination rates reported by LGBQ+ youth" /></a>
+      <p>This chart shows rates of discrimination experienced by LGBQ+ youth, categorized by sexuality (Gay, Lesbian,
+        Bisexual, Pansexual,
+        Queer, Questioning,
+        Asexual).
+      </p>
+      <p>In every category, over 50% of survey takers reported discrimination based on their sexual orientation. The
+        highest
+        percentages were 73% and 72% of gay and lesbian youth respectively.</p>
+      <br>
+      <a href="https://www.thetrevorproject.org/survey-2022/#discrimination"><img class="active revealable"
+          src="img/Discrimination_Gender_Identity.png"
+          alt="Discrimination rates reported by transgender and nonbinary youth" /></a>
+      <p>This chart shows rates of discrimination experienced by transgender and nonbinary youth, categorized by
+        gender identity (Transgender boy/man, Transgender girl/woman, Nonbinary/genderqueer).</p>
+      <p>Once again, over 50% of survey takers in each category reported discrimination based on their gender identity.
+        The
+        highest percentages were 86% of transgender boys/men and 77% of transgender girls/women.</p>
+      <br>
+      <a href="https://www.thetrevorproject.org/survey-2022/#affirming-spaces"><img class="active revealable"
+          src="img/Suicide_Community_Support.png"
+          alt="Comparison between suicide attempt rate of LGBTQ+ youth versus how accepting their community is of LGBTQ+ people" /></a>
+      <p>This chart shows how community acceptance of LGBTQ+ people impacts the suicide attempt rate of LGBTQ+ youth,
+        categorized into four levels (Very Unaccepting, Somewhat Unaccepting, Somewhat Accepting, Very Accepting). </p>
+      <p>The data shows an obvious correlation between the acceptance level and suicide risk. In communities that are
+        very
+        unaccepting, such as Florida, the suicide attempt rate of LGBTQ+ youth is highest. This is why it is so crucial
+        to
+        spread awareness about LGBTQ+ resources to youth in South FL.</p>
+ 
+
+    <h4>Statistics:</h4>
+    <ul>
+      <li>45% of LGBTQ+ youth seriously considered suicide in 2022 (<a
+          href="https://www.thetrevorproject.org/survey-2022/#mental-health-suicide-risk">Source</a>).</li>
+      <li>93% of transgender & nonbinary youth said they were worried about being denied access to gender-affirming care
+        due to state or local laws (<a
+          href="https://www.thetrevorproject.org/survey-2022/#anti-transgender-legislation">Source</a>).</li>
+      <li>Nearly 1 in 4 LGBQ+ teens have experienced sexual violence compared to 1 in 12 heterosexual
+        teens (<a
+          href="https://www.cdc.gov/nchhstp/newsroom/fact-sheets/healthy-youth/sadness-and-violence-among-teen-girls-and-LGBQ-youth-factsheet.html">Source</a>).
+      </li>
+      <li>Transgender people are over 4 times more likely than cisgender people to experience violent victimization
+        (<a href="https://williamsinstitute.law.ucla.edu/press/ncvs-trans-press-release/">Source</a>).</li>
+    </ul>
+
+    <!--- Impact --->
+
+    <h2 id="impact">Impact</h2>
+      <img class="active revealable" src="img/classroom-secondary-education.png" />
+      <h3>Secondary Education</h3>
+      <p>Parental Rights in Education Act ("Don't Say Gay Act")
+      </p>
+      <br>
+      <img class="active revealable" src="img/higher-education-graduates.jpeg" />
+      <h3>Higher Education</h3>
+      <p>HB 7 ("Stop W.O.K.E Act") and HB 999 / SB 266 (Defunding of Diversity, Equity, & Inclusion programs)
+      </p>
+      <br>
+      <img class="active revealable" src="img/black-trans-lives-dc-pride.png" />
+      <h3>Vulnerable Groups</h3>
+      <p>Black transgender women, transgender youth, homeless LGBTQ+ populations, etc.
+      </p>
+
+    <!--- Petition --->
+
+    <div class="petition" id="petition">
+
+      <h2>Sign Our Petition 📢</h2>
+      <div class="petition-container">
+
+
+        <div class="petition-para">
+          The Florida Board of Medicine and Board of Osteopathic Medicine have passed rules that will criminalize gender-affirming care for minors, including puberty blockers and hormone replacement therapy. Sign our petition to protect gender-affirming care for transgender and nonbinary youth. 
+        </div>
+
+        <div id="signatures">
+          <p>🖊️ DJ from Miami supports this</p>
+          <p>🖊️ Amy from Fort Lauderdale supports this</p>
+          <p>🖊️ Teresa from Miramar supports this</p>
+          <p> </p>
+        </div>
+
+      </div>
+
+      <!--- Sign Petition Form --->
+      <form id="sign-petition" title="sign-petition">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="hometown">Hometown:</label>
+        <input type="text" id="hometown" name="hometown">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+      </form>
+
+      <!--- Sign Now Button --->
+      <br>
+      <button id="sign-now-button">Sign Now</button>
+
+    </div>
+
+    <!--- Thanks For Signing Modal --->
+
+    <div id="thanks-modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div id="modal-text-container">
+          <p id="thanks-modal-content">
+            placeholder text
+          </p>
+          <button id="close-modal-button">Close</button>
+        </div>
+        <!-- image here-->
+        <img id="modal-image" src="img/ProgressPride_Heart.png"/>
+        
+      </div>
+      
+    </div>
+
+
+    <!--- News --->
+
+<!--     <h2 id="news">Recent News</h2> -->
+
+    <a class="" href="">
+      <article>
+        <h3></h3>
+        <p></p>
+      </article>
+    </a>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

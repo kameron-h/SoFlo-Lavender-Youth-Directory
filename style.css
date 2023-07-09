@@ -1,0 +1,319 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+
+    /* Add a background color or image */
+    background-color: #1f0030;
+
+    /* Customize the font, size, and color for text*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    color: #f7f2f9;
+
+    /* Adjust the padding and margins */
+    padding-bottom: 20px;
+
+}
+
+.light-mode {
+  background-color: #f7f2f9;
+  color: #1f0030;
+}
+
+#theme-button, #motion-button {
+  padding: 0;
+  text-decoration: underline;
+}
+
+.active {
+  transition: all 2s ease;
+  transform: translateY(0px);
+  opacity: 1;
+} 
+
+ .revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+}
+
+.reduce-motion-active {
+  transition: all 0.5s ease;
+  transform: none;
+  opacity: 1;
+}
+
+.reduce-motion-reveal {
+  position: relative;
+  transform: none;
+  opacity: 0;
+}
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1, h2 {
+  color: orchid;
+  
+}
+
+h4 {
+  font-style: italic;
+}
+
+p, a, ul {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a:link{
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+a:visited{
+  color: orchid;
+}
+
+a:hover{
+  text-decoration: underline; 
+}
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+button {
+  background-color: #1f0030;
+  border: none;
+  color: #f7f2f9;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 15px 32px;
+}
+
+button:hover {
+  color: orchid;
+}
+
+/* Header Button Dropdown */
+
+.header-button {
+  position: relative;
+  display:inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #1f0030;
+  min-width: 300px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.lightmode-dropdown {
+  display: none;
+  position: absolute;
+  background-color:  #f7f2f9;
+  min-width: 300px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.dropdown-content li {
+  text-align: left;
+  color: orchid;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.header-button:hover .dropdown-content {
+  display: block;
+}
+
+/* Containers */
+
+.header-container {
+  display:flex;
+  margin-top: 50px;
+  border-bottom: solid 5px #f7f2f9;
+}
+
+.lightmode-header {
+  display:flex;
+  margin-top: 50px;
+  border-bottom: solid 5px #1f0030;
+}
+
+.content-container {
+  max-width: 700px;
+  margin: 50px 50px 50px 100px;
+}
+
+.content-container img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+/* Petition */ 
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signature {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.petition button {
+  border: 2px solid orchid;
+}
+
+.petition button:hover {
+  background-color: orchid;
+  color: #1f0030;
+}
+
+#signatures {
+  width: 500px;
+}
+
+input {
+  min-width: 200px;
+  margin: 10px;
+}
+
+.invalid {
+  border: 2px solid red;
+  background-color: pink;
+}
+
+/* Thank You for Signing Modal */ 
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: orchid; /* update the colors and font sizes as you like */
+  color: #f7f2f9;
+  border: dashed 5px #f7f2f9;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#modal-image {
+  width: 250px;
+  height: auto;
+  margin: 40px;
+}
+
+/* Navigation Bar */
+
+.navbar ul {
+  margin-top: 0;
+  margin-left: 0;
+  background-color:   #1f0030;
+  list-style: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar ul li {
+  float:left;
+  margin: 10px;
+}
+
+.navbar li a {
+  display: block;
+  color: #f7f2f9;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;  
+  padding: 0px 20px;
+}
+
+.navbar a:link a:visited{
+  color: #f7f2f9;
+}
+
+.navbar a:hover{
+  color: orchid;
+}
+
+/* Part 2: Flexbox */
+
+.header-item:nth-of-type(1) img {
+  width: 150px;
+  height: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.header-item:nth-of-type(2) {
+  text-align: left;
+}
+
+/* Style set for all flex-items */
+.header-item {
+  font-weight: bold;
+  margin: 0px 20px 0px 20px; 
+}
